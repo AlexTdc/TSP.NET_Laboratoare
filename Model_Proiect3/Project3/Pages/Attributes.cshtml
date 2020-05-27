@@ -1,0 +1,13 @@
+﻿@page
+@model Project3.Pages.AttributesModel
+@{
+    ViewData["Title"] = "Attributes";
+}
+
+<h1>Attributes</h1>
+
+@foreach (var item in Model.prs)
+{
+    <a asp-page="/Resources/Photos" asp-route-name="@item.Name">@item.Name</a>
+    <br>
+}

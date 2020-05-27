@@ -1,0 +1,15 @@
+﻿@page
+@model Project3.Pages.Resources.PhotosModel
+@{
+    ViewData["Title"] = "Photos";
+}
+
+<h1>Photos</h1>
+@for (var i = 0; i < Model.displayPht.Count; i++)
+    {
+    <p>@Html.DisplayFor(modelItem => Model.displayPht[i].Name)</p>
+    //<img width="300" src="@Model.b64[i]" />
+
+
+    }
+
